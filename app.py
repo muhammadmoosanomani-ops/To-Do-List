@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 #Scss(app) # (Disabled for production deployment)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////tmp/database.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
