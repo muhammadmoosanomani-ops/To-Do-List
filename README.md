@@ -2,7 +2,7 @@
 
 A lightweight, fully functional full-stack web application that allows users to manage their daily schedules efficiently. This project tracks and organizes your operations in real-time, designed with a modular, hierarchical architecture.
 
-[![Deployment Status](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel)](https://your-app-name.vercel.app)
+[![Deployment Status](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel)](https://to-do-list-nine-vert-17.vercel.app/)
 
 > **Live Demo:** [https://to-do-list-nine-vert-17.vercel.app/](https://to-do-list-nine-vert-17.vercel.app/)
 
