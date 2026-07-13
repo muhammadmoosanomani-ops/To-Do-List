@@ -4,6 +4,7 @@ from flask import Flask, render_template, redirect, request
 #from flask_scss import Scss # (Vercel doesn't support runtime SCSS compilation natively)
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 # My App Setup
 app = Flask(__name__)
@@ -18,8 +19,7 @@ class MyTask(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(100), nullable=False)
     complete = db.Column(db.Integer, default=0)
-    # FIX 3: Using timezone-aware modern datetime standard
-    created = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+    created = db.Column(db.DateTime, default=lambda: datetime.now(ZoneInfo("Asia/Karachi")))
 
     def __init__(self, content: str, complete: int = 0):
         self.content = content
