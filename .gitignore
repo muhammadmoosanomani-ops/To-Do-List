@@ -12,6 +12,9 @@ instance/
 __pycache__/
 *.pyc
 
+# Vercel local build cache
+.vercel/
+
 # OS generated files
 .DS_Store
 Thumbs.db
