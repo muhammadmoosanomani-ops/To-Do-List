@@ -1,0 +1,17 @@
+# Virtual environment
+env/
+venv/
+ENV/
+
+# VS Code configurations
+.vscode/
+
+# Local databases and caches
+instance/
+*.db
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
